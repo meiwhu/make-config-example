@@ -17,15 +17,13 @@ commander
   .parse(process.argv);
 
 if (!commander.input) {
-  console.log('Error: no input.\n');
-  process.exit();
+  throw new Error('Error: no input.\n');
 }
 
 if (!commander.type) {
   const ext = path.extname(`X${commander.input}`);
   if (!supportType.includes(ext)) {
-    console.log(`Error: not supprot ${ext} file`);
-    process.exit();
+    throw new Error(`Error: not supprot ${ext} file`);
   }
 
   // check file
@@ -33,8 +31,7 @@ if (!commander.type) {
   try {
     fs.accessSync(filepath);
   } catch (err) {
-    console.log('Error: file not exist');
-    process.exit();
+    throw new Error('Error: file not exist');
   }
 
   let retString = '';

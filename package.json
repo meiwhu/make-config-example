@@ -1,6 +1,6 @@
 {
   "name": "make-config-example",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Generate config's example",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,8 @@
   },
   "scripts": {
     "build": "babel src -d lib",
-    "prepublish": "babel src -d lib"
+    "prepublish": "npm run build && npm run test",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
   }
 }
