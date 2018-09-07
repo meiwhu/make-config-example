@@ -1,5 +1,5 @@
 {
-  "name": "make-config-example",
+  "name": "@meibin/make-config-example",
   "version": "0.0.1",
   "description": "Generate config's example",
   "main": "index.js",
