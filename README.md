@@ -1,8 +1,5 @@
 Generate config template file with suffix '.example' by current exist config file.
 
-# Current Support Type
-- .env
-
 # Usage
 ```sh
 # install as global
@@ -19,4 +16,12 @@ make-config-example -V
 
 # help
 make-config-example -h
+```
+
+# Current Support Type
+- .env
+
+# Test
+```sh
+npm run test
 ```
