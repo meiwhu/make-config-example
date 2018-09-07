@@ -2,7 +2,7 @@
 Generate config template file with suffix '.example' by current exist config file.
 
 # current support type
-- .env
+- `.env => .env.example`
 
 # use
 ```sh
