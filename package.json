@@ -1,0 +1,35 @@
+{
+  "name": "make-config-example",
+  "version": "0.0.1",
+  "description": "Generate config's example",
+  "main": "index.js",
+  "bin": {
+    "make-example": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/meiwhu/make-config-example.git"
+  },
+  "keywords": [
+    "config",
+    "example"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meiwhu/make-config-example/issues"
+  },
+  "homepage": "https://github.com/meiwhu/make-config-example#readme",
+  "dependencies": {
+    "commander": "^2.17.1",
+    "dotenv": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
