@@ -4,13 +4,14 @@ const commander = require('commander');
 const path = require('path');
 const dotenv = require('dotenv');
 const fs = require('fs');
+const packageFile = require('../package.json');
 
 const supportType = [
   '.env',
 ];
 
 commander
-  .version('0.0.4')
+  .version(packageFile.version)
   .option('-i, --input <filepath>', 'origin config file path')
   .option('-t, --type <type>', `config type:${supportType.join(', ')}`)
   .parse(process.argv);

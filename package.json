@@ -1,13 +1,17 @@
 {
   "name": "make-config-example",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Generate config's example",
   "main": "index.js",
   "bin": {
     "make-config-example": "./bin/index.js"
   },
+  "files": [
+    "lib",
+    "bin"
+  ],
   "engines": {
-    "node": ">=>=0.4.0"
+    "node": ">=0.4.0"
   },
   "scripts": {
     "build": "babel src -d lib",
