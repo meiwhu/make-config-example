@@ -1,10 +1,10 @@
 {
-  "name": "@meibin/make-config-example",
+  "name": "make-config-example",
   "version": "0.0.1",
   "description": "Generate config's example",
   "main": "index.js",
   "bin": {
-    "make-example": "./bin/index.js"
+    "make-config-example": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
