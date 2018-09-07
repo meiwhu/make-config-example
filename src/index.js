@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const commander = require('commander');
 const path = require('path');
 const dotenv = require('dotenv');
@@ -8,7 +10,7 @@ const supportType = [
 ];
 
 commander
-  .version('0.0.1')
+  .version('0.0.4')
   .option('-i, --input <filepath>', 'origin config file path')
   .option('-t, --type <type>', `config type:${supportType.join(', ')}`)
   .parse(process.argv);
