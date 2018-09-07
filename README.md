@@ -19,7 +19,9 @@ make-config-example -h
 ```
 
 # Current Support Type
-- .env
+```sh
+.env
+```
 
 # Test
 ```sh
