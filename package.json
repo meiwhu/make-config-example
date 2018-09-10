@@ -1,6 +1,6 @@
 {
   "name": "make-config-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate config's example",
   "main": "index.js",
   "bin": {
@@ -15,8 +15,8 @@
   },
   "scripts": {
     "build": "babel src -d lib",
-    "prepublish": "npm run build && npm run test",
-    "test": "mocha"
+    "prepublish": "npm run test",
+    "test": "npm run build && mocha"
   },
   "repository": {
     "type": "git",

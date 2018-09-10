@@ -55,6 +55,6 @@ if (!commander.type) {
   }
 
   // write file
-  const targetFilePath = path.resolve(process.cwd(), `${filepath}.example`);
+  const targetFilePath = `${filepath}.example`;
   fs.writeFileSync(targetFilePath, retString);
 }
