@@ -21,6 +21,7 @@ make-config-example -h
 # Current Support Type
 ```sh
 .env
+.json
 ```
 
 # Test
