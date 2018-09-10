@@ -1,13 +1,18 @@
-#!/usr/bin/env node
+import commander from 'commander';
+import path from 'path';
+import dotenv from 'dotenv';
+import fs from 'fs';
+import reset from './reset';
+import packageFile from '../package.json';
 
-const commander = require('commander');
-const path = require('path');
-const dotenv = require('dotenv');
-const fs = require('fs');
-const packageFile = require('../package.json');
+const TYPES = {
+  JSON: ['.json'],
+  ENV: ['.env'],
+};
 
 const supportType = [
-  '.env',
+  ...TYPES.JSON,
+  ...TYPES.ENV,
 ];
 
 commander
@@ -36,10 +41,17 @@ if (!commander.type) {
 
   let retString = '';
 
-  if (ext === '.env') {
+  if (TYPES.ENV.includes(ext)) {
     const buf = fs.readFileSync(filepath);
     const envs = dotenv.parse(buf);
     retString = Object.keys(envs).map(key => `${key}=`).join('\n');
+  }
+
+  if (TYPES.JSON.includes(ext)) {
+    const json = fs.readFileSync(filepath).toString();
+    const jsonObj = JSON.parse(json);
+    const resetObj = reset(jsonObj);
+    retString = JSON.stringify(resetObj, null, 2);
   }
 
   // write file

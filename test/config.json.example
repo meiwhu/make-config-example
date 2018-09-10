@@ -1,0 +1,11 @@
+{
+  "name": "string",
+  "age": 0,
+  "friends": [
+    "string",
+    "string"
+  ],
+  "others": {
+    "gender": "string"
+  }
+}

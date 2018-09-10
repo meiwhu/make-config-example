@@ -2,6 +2,7 @@ const childProcess = require('child_process');
 
 const options = [
   '-i .env',
+  '-i config.json',
   '-V',
   '-h',
 ];

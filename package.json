@@ -1,6 +1,6 @@
 {
   "name": "make-config-example",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Generate config's example",
   "main": "index.js",
   "bin": {
