@@ -1,3 +1,5 @@
+[![travis-icon]][travis-link]
+
 Generate config template file with suffix '.example' by current exist config file.
 
 # Usage
@@ -28,3 +30,6 @@ make-config-example -h
 ```sh
 npm run test
 ```
+
+[travis-icon]:https://travis-ci.org/meiwhu/make-config-example.svg?branch=master
+[travis-link]:https://travis-ci.org/meiwhu/make-config-example
