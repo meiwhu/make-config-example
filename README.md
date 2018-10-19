@@ -1,6 +1,6 @@
 [![travis-icon]][travis-link]
 
-Generate config template file with suffix '.example' by current exist config file.
+Generate config template file with suffix '.example' for current exist config file.
 
 # Usage
 ```sh
